@@ -1,0 +1,55 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: linear-gradient(180deg, #f7f2ff, #fff7fb); /* pastel purple → pink */
+  color: #444;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #9b7bdc; /* pastel purple */
+}
+
+/* grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* assignment cards */
+.grid a {
+  text-decoration: none;
+  color: inherit;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* hover animation */
+.grid a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(155,123,220,0.25);
+}
+
+/* thumbnail images */
+.grid img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* assignment text */
+.grid p {
+  margin: 12px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #6d5ca5;
+}
