@@ -6,7 +6,7 @@ Title: Pastel Quilt
 */
 
 function setup() {
-  createCanvas(1240, 1240);
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
